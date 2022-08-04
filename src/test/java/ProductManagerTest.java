@@ -19,9 +19,9 @@ public class ProductManagerTest {
         manager.add(tickets4);
 
 
-        Tickets[] actual = manager.searchBy("Пермь", "Пермь");
-        Tickets[] expected = {tickets4};
 
+        Tickets[] actual = manager.searchBy("Тюмень", "Пермь");
+        Tickets[] expected = {tickets1, tickets2, tickets3};
 
         Assertions.assertArrayEquals(actual, expected);
 
