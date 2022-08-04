@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7559fbfe-244d-4161-ba18-8bdb02cc305c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TicketsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TicketsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,17 +44,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TicketsTest.getAndSetTicket4">
-    <configuration name="ProductManagerTest.nothingFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TicketSearch" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
-      <option name="METHOD_NAME" value="nothingFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TicketsTest.getAndSetTicket5">
     <configuration name="TicketsTest.getAndSetTicket1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TicketSearch" />
       <option name="PACKAGE_NAME" value="" />
@@ -96,13 +85,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicketsTest.getAndSetTicket5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicketSearch" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicketsTest" />
+      <option name="METHOD_NAME" value="getAndSetTicket5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicketsTest.getAndSetTicket5" />
         <item itemvalue="JUnit.TicketsTest.getAndSetTicket4" />
         <item itemvalue="JUnit.TicketsTest.getAndSetTicket3" />
         <item itemvalue="JUnit.TicketsTest.getAndSetTicket2" />
         <item itemvalue="JUnit.TicketsTest.getAndSetTicket1" />
-        <item itemvalue="JUnit.ProductManagerTest.nothingFound" />
       </list>
     </recent_temporary>
   </component>
