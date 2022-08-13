@@ -64,7 +64,6 @@ public class TicketsTest {
         Tickets tickets4 = new Tickets(76, 500, "Пермь", "Пермь", 470);
 
 
-
         System.out.println(tickets1.compareTo(tickets2));
         System.out.println(tickets5.compareTo(tickets1));
         System.out.println(tickets3.compareTo(tickets4));
@@ -85,5 +84,20 @@ public class TicketsTest {
 
 
     }
+
+    @Test
+    public void compareTo() {
+
+        Tickets tickets5 = new Tickets(12, 2300, "Москва", "Казань", 95);
+        Tickets tickets1 = new Tickets(12, 2300, "Москва", "Казань", 95);
+        Tickets tickets2 = new Tickets(34, 6200, "Екатеринбург", "Москва", 150);
+        Tickets tickets3 = new Tickets(56, 11300, "Екатеринбург", "Сочи", 235);
+        Tickets tickets4 = new Tickets(76, 500, "Пермь", "Пермь", 470);
+
+        System.out.println(tickets1.compareTo(tickets5));
+        System.out.println(tickets1.compareTo(tickets2));
+        System.out.println(tickets3.compareTo(tickets5));
+    }
+
 
 }
