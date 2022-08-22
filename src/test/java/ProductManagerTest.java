@@ -21,7 +21,58 @@ public class ProductManagerTest {
 
 
         Tickets[] actual = manager.searchBy("Тюмень", "Пермь");
-        Tickets[] expected = {tickets1, tickets2, tickets3};
+        Tickets[] expected = {tickets4};
+
+        Assertions.assertArrayEquals(actual, expected);
+
+    }
+
+    @Test
+    public void foundSeveral() {
+
+        manager.add(tickets1);
+        manager.add(tickets2);
+        manager.add(tickets3);
+        manager.add(tickets4);
+
+
+        Tickets[] actual = manager.searchBy("Екатеринбург", "Тюмень");
+        Tickets[] expected = {tickets2, tickets3};
+
+
+        Assertions.assertArrayEquals(actual, expected);
+
+    }
+
+    @Test
+    public void notFound() {
+
+        manager.add(tickets1);
+        manager.add(tickets2);
+        manager.add(tickets3);
+        manager.add(tickets4);
+
+
+        Tickets[] actual = manager.searchBy("Крым", "Тюмень");
+        Tickets[] expected = {};
+
+
+        Assertions.assertArrayEquals(actual, expected);
+
+    }
+
+    @Test
+    public void foundOne() {
+
+        manager.add(tickets1);
+        manager.add(tickets2);
+        manager.add(tickets3);
+        manager.add(tickets4);
+
+
+        Tickets[] actual = manager.searchBy("Москва", "Казань");
+        Tickets[] expected = {tickets1};
+
 
         Assertions.assertArrayEquals(actual, expected);
 

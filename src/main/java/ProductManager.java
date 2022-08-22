@@ -29,7 +29,7 @@ public class ProductManager {
 
 
     public boolean matches(Tickets tickets, String from, String to) {
-        if (tickets.getFrom().contains(from) == tickets.getTo().contains(to)) {
+        if (tickets.getFrom().contains(from) | tickets.getTo().contains(to)) {
             return true;
         } else {
             return false;
